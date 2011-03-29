@@ -1,0 +1,15 @@
+{
+    "name": "Faviconify Erldocs.com",
+    "version": "1.0",
+    "description": "Give Erldocs.com a favicon (for better recognition when tab is pinned).",
+    "icons" : {
+         "16": "icon-16.png",
+         "48": "icon-48.png",
+        "128": "icon-128.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://erldocs.com/*"],
+        "js":      ["content_script.js"],
+        "run_at":  "document_start"
+    }]
+}
